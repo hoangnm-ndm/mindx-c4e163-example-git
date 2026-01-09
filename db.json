@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "email": "hoang@gmail.com",
+      "password": "$2a$10$gmg.qtBVBIpSTvobUMY8Gu29ZEjhB2kGhX.w.Z7oJAIImTelOT80y",
+      "role": "admin",
+      "gender": "male",
+      "major": "Computer Science",
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Laptop",
+      "price": 999.99,
+      "description": "A high-performance laptop suitable for all your computing needs."
+    },
+    {
+      "id": 2,
+      "name": "Smartphone",
+      "price": 699.99,
+      "description": "A sleek smartphone with the latest features and a stunning display."
+    },
+    {
+      "id": 3,
+      "name": "Headphones",
+      "price": 199.99,
+      "description": "Noise-cancelling headphones for an immersive audio experience."
+    }
+  ]
+}

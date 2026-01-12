@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TokyoLife - Home Page</title>
+    <title>TokyoLife - Danh mục</title>
 
     <!-- CSS reset -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -20,13 +20,45 @@
     <link rel="stylesheet" href="./assets/css/common.css" />
 
     <!-- CSS private/components -->
-    <link rel="stylesheet" href="./assets/css/header.css" />
-    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/components/header.css" />
+    <link rel="stylesheet" href="./assets/css/components/footer.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    <h1>Home Page</h1>
+    <header class="d-flex-center">
+      <div class="logo">logo</div>
+      <nav>
+        <ul class="d-flex-center">
+          <li><a href="">Home</a></li>
+          <li><a href="">Category</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Services</a></li>
+        </ul>
+      </nav>
+
+      <div class="user-control">
+        <div class="user-icon">icon</div>
+      </div>
+    </header>
+    <h1>Sản phẩm hot tháng 11</h1>
+    <div class="product-filter"></div>
     <div id="products"></div>
+
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-end">
+        <li class="page-item disabled">
+          <!-- <a class="page-link" href="#" tabindex="-1">Previous</a> -->
+          <li class="page-item"><button class="pre">Previous</button></li>
+        </li>
+        <li class="page-item"><button class="page-link prePage"></button></li>
+        <li class="page-item"><button class="page-link currentPage"></button></li>
+        <li class="page-item"><button class="page-link nextPage"></button></li>
+        <li class="page-item">
+          <li class="page-item"><button class="next">Next</button></li>
+
+        </li>
+      </ul>
+    </nav>
 
     <!-- axios -->
     <script

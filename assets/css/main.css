@@ -1,0 +1,12 @@
+#products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 32px;
+  .product-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.5);
+  }
+}

@@ -8,10 +8,11 @@ const prePage = document.getElementsByClassName("prePage")[0];
 
 let page = 1;
 let limit = 12;
+let sort = "price"
 
 function fetchProducts() {
   axios
-    .get(`${url}/products?_start=${limit * (page - 1) + 1}&_limit=${limit}`)
+    .get(`${url}/products?_start=${limit * (page - 1) + 1}&_limit=${limit}&_sort=${}`)
     .then((res) => {
       renderProducts(res.data);
     })
